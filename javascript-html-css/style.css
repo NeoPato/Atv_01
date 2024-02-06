@@ -12,7 +12,6 @@ header{
     position: fixed;
     top: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    color: black;
 }
 ul{
     list-style: none;
@@ -21,10 +20,9 @@ ul{
     justify-content: center;
     gap: 30px;
     width: 100%;
-    
 }
 a{
-    color: white;
+    color: black;
     opacity: 0.8;
     text-decoration: none;
     transition: all 200s linear;
@@ -36,7 +34,7 @@ a:hover{
     transition: all 200s linear;
 }
 li{
-    color: white;
+    color: black;
     opacity: 0.8;
     text-decoration: none;
     transition: all 5s linear;
