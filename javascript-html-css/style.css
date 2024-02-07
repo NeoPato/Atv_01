@@ -12,6 +12,7 @@ header{
     position: fixed;
     top: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 999;
 }
 ul{
     list-style: none;
@@ -47,9 +48,58 @@ li:hover{
 }
 .profile01{
     width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 100px;
+    align-items: center;
+    gap: 50px;
+    padding-top: 100px;
+    margin-top: 10px;
+}
+.left_profile01{
+    width: 500px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.right_profile01{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 30px;
+}
+.profile01_imagem{
+    position: relative;
+    overflow: hidden;
+    width: 500px;
     height: 500px;
-    background-color: green;
-    margin-top: 30px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.img_01{
+    width: auto;
+    height: 500px;
+    position: absolute;
+    transition: all 400ms linear;
+}
+.img_01:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 400ms linear;
+}
+.name_p1{
+    font-size: 3.2rem;
+    color: #000;
+}
+.des_p1{
+    font-size: 1.6rem;
+    list-style: 40px;
 }
 .profile02{
     width: 100%;
@@ -66,3 +116,23 @@ li:hover{
     height: 500px;
     background-color: turquoise;
 }
+font{
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+    .name_p1{
+        font-size: 2.5rem;
+        color: #000;
+        text-align: center;
+        padding-top: 6vh;
+    }
+    .des_p1{
+        font-size: 1    .6rem;
+        padding: 30px;
+        line-height: 30px;
+    }
+  }
