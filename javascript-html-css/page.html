@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+
 </head>
 <body>
     <header>
@@ -42,22 +44,29 @@
     <div id="contact" class="contact">
         <div>
             <div>
-                <h3>Contato</h3>
-                <p>Manda mensagem</p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <label for="nome">Nome</label>
-                <input type="text" id="nome">
+                <div>
+                    <h3>Contato</h3>
+                    <p>Manda mensagem</p>
+                </div>
             </div>
             <div>
-                <label for="mensagem">Mensagem</label>
-                <textarea type="text" id="mensagem"></textarea>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea type="text" id="mensagem"></textarea>
+                </div>
+                <button onclick="conferirMensagemWhatsApp()"> Conferir Mensagem </button>
+            </div>         
+            <div> 
+                <div>
+                    <p>Nome: <span id="confNome"></span></p>
+                    <p>Mensagem: <span id="confMsg"></span></p>
+                </div>
+                <button onclick="enviar()"> ZAP </button>
             </div>
-        </div>
-        <div>
-            <button onclick="conferirMensagemWhatsApp() ">Conferir dados inseridos</button>
         </div>
     </div>
 </body>
