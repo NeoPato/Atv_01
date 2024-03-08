@@ -170,6 +170,22 @@ li:hover{
 font{
     font-family: 'Poppins', sans-serif;
 }
+.flex-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+
 
 @media screen and (max-width: 480px) {
     body {
