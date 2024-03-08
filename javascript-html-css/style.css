@@ -71,7 +71,7 @@ li:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     gap: 30px;
 }
 .profile01_imagem{
@@ -85,6 +85,7 @@ li:hover{
 .img_01{
     width: auto;
     height: 500px;
+    margin-left: 20%;
     position: absolute;
     transition: all 400ms linear;
 }
@@ -103,8 +104,58 @@ li:hover{
 }
 .profile02{
     width: 100%;
-    height: 500px;
+    height: auto;
     background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 100px;
+    align-items: center;
+    gap: 50px;
+    padding-top: 100px;
+    margin-top: 10px;
+}
+.right_profile02{
+    width: 500px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.left_profile02{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 30px;
+}
+.profile02_imagem{
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.img_02{
+    width: auto;
+    height: 500px;
+    position: absolute;
+    transition: all 400ms linear;
+}
+.img_02:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 400ms linear;
+}
+.name_p2{
+    font-size: 3.2rem;
+    color: #000;
+}
+.des_p2{
+    font-size: 1.6rem;
+    list-style: 40px;
 }
 .tec{
     width: 100%;
